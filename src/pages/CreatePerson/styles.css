@@ -1,0 +1,150 @@
+#page-create-person {
+    width: 100%;
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+#page-create-person form {
+    margin: 80px auto;
+    padding: 64px;
+    max-width: 730px;
+    background: #FFF;
+    border-radius: 8px;
+
+    display: flex;
+    flex-direction: column;
+}
+
+#page-create-person form h1 {
+    font-size: 36px;
+}
+
+#page-create-person form fieldset {
+    margin-top: 64px;
+    min-inline-size: auto;
+    border: 0;
+}
+
+#page-create-person form fieldset legend {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 40px;
+}
+
+#page-create-person form fieldset legend h2 {
+    font-size: 24px;
+}
+
+#page-create-person form fieldset .field-group {
+    flex: 1;
+    display: flex;
+}
+
+#page-create-person form fieldset .field {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 24px;
+}
+
+#page-create-person form fieldset .field input[type=text],
+#page-create-person form fieldset .field input[type=email],
+#page-create-person form fieldset .field input[type=number] {
+    flex: 1;
+    background: #F0F0F5;
+    border-radius: 8px;
+    border: 0;
+    padding: 16px 24px;
+    font-size: 16px;
+    color: #6C6C80;
+}
+
+#page-create-person form fieldset .field-group .field select {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    flex: 1;
+    background: #F0F0F5;
+    border-radius: 8px;
+    border: 0;
+    padding: 16px 24px;
+    font-size: 16px;
+    color: #6C6C80;
+}
+
+#page-create-person form fieldset .field input::placeholder {
+    color: #A0A0B2;
+}
+
+#page-create-person form fieldset .field label {
+    font-size: 14px;
+    margin-bottom: 8px;
+}
+
+#page-create-person form fieldset .field :disabled {
+    cursor: not-allowed;
+}
+
+#page-create-person form fieldset .field-group .field + .field {
+    margin-left: 24px;
+}
+
+#page-create-person form fieldset .field-group input + input {
+    margin-left: 24px;
+}
+
+#page-create-person form button {
+    width: 260px;
+    height: 56px;
+    background: #34CB79;
+    border-radius: 8px;
+    color: #FFF;
+    font-weight: bold;
+    font-size: 16px;
+    border: 0;
+    align-self: flex-end;
+    margin-top: 40px;
+    transition: background-color 0.2s;
+    cursor: pointer;
+}
+
+#page-create-person form button:hover {
+    background: #2FB86E;
+}
+
+.items-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 16px;
+    list-style: none;
+}
+
+.items-grid li {
+    background: #f5f5f5;
+    border: 2px solid #f5f5f5;
+    height: 180px;
+    border-radius: 8px;
+    padding: 32px 24px 16px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    cursor: personer;
+}
+
+.items-grid li span {
+    flex: 1;
+    margin-top: 12px;
+    display: flex;
+    align-items: center;
+    color: #322153
+}
+
+.items-grid li.selected {
+    background: #E1FAEC;
+    border: 2px solid #34CB79;
+}
