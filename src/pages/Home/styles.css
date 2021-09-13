@@ -89,17 +89,30 @@
 
 #page-home .content fieldset .items-grid div a,button {
     width: 100%;
-    max-width: 48px;
-    background: #34CB79;
+    /* max-width: 48px; */
     color: #FFF;
     border-radius: 8px;
     border-width: 0px;
-
     display: flex;
     align-items: center;
     justify-content: center;
     overflow: hidden;
     cursor: pointer;
+}
+
+#page-home .content fieldset .items-grid div a {
+    background-color: #4d4dff;
+    max-width: 48px;
+}
+
+#page-home .content fieldset .items-grid div a button {
+    background-color: #4d4dff;
+    height: 100%;
+}
+
+#page-home .content fieldset .items-grid div button {
+    background-color: #ff3333;
+    max-width: 48px;
 }
 
 #page-home .content fieldset .items-grid div a:hover {
